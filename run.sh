@@ -21,7 +21,7 @@ case "$1" in
         if [ $# -lt 2 ]; then
             echo 'No parameter specified'
         else
-	        docker exec -it angular_runner $2
+            docker exec -it angular_runner $2
         fi
 	    ;;
     *)
