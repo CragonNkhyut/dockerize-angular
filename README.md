@@ -1,5 +1,7 @@
 # Dockerize-angular #
 
+Tutorial
+---
 This project will let you create, build, test, and deploy angular applications in docker without needing tools to install on your computer. 
 
 1. copy `env-example` and rename to `.env`
@@ -18,7 +20,7 @@ Extras, in order to run ng related commands
 Type `sh run.sh exec <command>` to execute the command (be remember to use double quotes(") for the command)
 
 Known Issues
-
+---
 1. This docker uses the included user of node docker - node(uid - 1000). Users other than uid 1000 will not be able to work with this version of project. 
 
 2. If the container is stopped without removing - like shutting down the computer, the docker will not be start. Please type sh run.sh stop first to manually remove the container. 
