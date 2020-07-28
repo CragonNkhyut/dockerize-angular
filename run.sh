@@ -23,7 +23,7 @@ case "$1" in
         else
             docker exec -it angular_runner $2
         fi
-	    ;;
+        ;;
     *)
         echo 'No parameter specified'
         ;;
