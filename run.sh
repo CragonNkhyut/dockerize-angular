@@ -18,8 +18,12 @@ case "$1" in
         docker container rm angular_runner
         ;;
     "exec")
-	docker exec -it angular_runner bash
-	;;
+        if [ $# -lt 2 ]; then
+            echo 'No parameter specified'
+        else
+	        docker exec -it angular_runner $2
+        fi
+	    ;;
     *)
         echo 'No parameter specified'
         ;;
