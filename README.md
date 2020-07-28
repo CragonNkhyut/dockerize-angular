@@ -23,4 +23,4 @@ Known Issues
 ---
 1. This docker uses the included user of node docker - node(uid - 1000). Users other than uid 1000 will not be able to work with this version of project. 
 
-2. If the container is stopped without removing - like shutting down the computer, the docker will not be start. Please type sh run.sh stop first to manually remove the container. 
+2. If the container is stopped without removing - like shutting down the computer, the docker will not be start. Please type `sh run.sh stop` first to manually remove the container. 
